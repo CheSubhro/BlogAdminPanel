@@ -1,0 +1,25 @@
+info:
+  name: Update Profile
+  type: http
+  seq: 34
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/settings/profile
+  body:
+    type: json
+    data: |-
+      {
+        "firstName": "Che",
+        "lastName": "Subhro",
+        "bio": "Full Stack Web Developer from West Bengal",
+        "github": "github.com/CheSubhro",
+        "newPassword": "secretpassword123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,21 @@
+info:
+  name: Admin Reply
+  type: http
+  seq: 20
+
+http:
+  method: PATCH
+  url: http://localhost:5000/api/comments/69c2236f51608effea88a314/reply
+  body:
+    type: json
+    data: |-
+      {
+        "replyText": "Dhonyobad apnake!"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

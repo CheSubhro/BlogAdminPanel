@@ -1,0 +1,15 @@
+info:
+  name: Approve All
+  type: http
+  seq: 22
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/comments/approve-all
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

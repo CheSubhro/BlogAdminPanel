@@ -1,0 +1,26 @@
+info:
+  name: Create Comments
+  type: http
+  seq: 28
+
+http:
+  method: POST
+  url: http://localhost:5000/api/comments
+  body:
+    type: json
+    data: |-
+      {
+        "user": "Sayan Mukherjee",
+        "initials": "SM",
+        "text": "Next.js 15-er noutun features gulo ki ekhon production-e use kora thik hobe?",
+        "post": "Web Development",
+        "status": "Pending",
+        "date": "27 March 2026"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

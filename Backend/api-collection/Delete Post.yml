@@ -1,0 +1,15 @@
+info:
+  name: Delete Post
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{base_url}}/posts/69c0e96ed6143a374dcc1d6a"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

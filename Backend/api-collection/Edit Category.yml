@@ -1,0 +1,23 @@
+info:
+  name: Edit Category
+  type: http
+  seq: 15
+
+http:
+  method: PUT
+  url: "{{base_url}}/categories/69c111087d3a8ff582d18e2f"
+  body:
+    type: json
+    data: |-
+      {
+      "name": "SoftWare Technology",
+      "slug": "Software-tech",
+      "description": "All about Software technologies"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

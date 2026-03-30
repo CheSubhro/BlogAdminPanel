@@ -1,0 +1,58 @@
+
+
+mitsubhra_db_user
+
+IFFgedkZeKKd0MJ8
+
+mongodb+srv://mitsubhra_db_user:IFFgedkZeKKd0MJ8@cluster0.2q2pqtp.mongodb.net/?appName=Cluster0
+
+API
+
+1. Authentication (Auth) API
+    Sobar age eta lagbe, karon login page-er logic ekhane thakbe.
+
+    POST /api/auth/login - Admin login korar jonno.
+
+    POST /api/auth/logout - Session bondho korar jonno.
+
+    GET /api/auth/me - Current user-er details (role, name) check korar jonno.
+
+2. Posts (Blogs/Articles) API
+
+    AllPosts ebong CreatePost page-er jonno.
+
+    GET /api/posts - Sob post-er list niye asar jonno.
+
+    GET /api/posts/:id - Single post details dekhar jonno.
+
+    POST /api/posts - Notun post create korar jonno.
+
+    PUT /api/posts/:id - Existing post update korar jonno.
+
+    DELETE /api/posts/:id - Post muche felar jonno.   
+
+3. Categories & Media API
+    GET /api/categories - Sob category dekhar jonno.
+
+    POST /api/categories - Notun category banano.
+
+    POST /api/media/upload - Chhobi ba file server-e upload korar jonno.
+
+4. Users & Comments API
+    GET /api/users - Sob user-er list dekhar jonno.
+
+    PUT /api/users/:id - User-er role change ba block korar jonno.
+
+    GET /api/comments - Sob comment-er list.
+
+    PATCH /api/comments/:id - Comment approve ba reject korar jonno. 
+
+5. Analytics & Dashboard Stats
+    Dashboard-er box-e je sonkhya gulo thake (Total Posts, Total Users), segulo eikhan theke asbe.
+
+    GET /api/analytics/stats - Dashboard-er summary data (count).
+
+    GET /api/analytics/charts - Graph-er data (din onujayi koto view ba post holo).            
+
+
+

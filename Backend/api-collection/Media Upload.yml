@@ -1,0 +1,22 @@
+info:
+  name: Media Upload
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/media"
+  body:
+    type: multipart-form
+    data:
+      - name: image
+        type: file
+        value:
+          - C:\Users\CHE\Downloads\1.JPG
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

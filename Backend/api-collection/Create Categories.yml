@@ -1,0 +1,23 @@
+info:
+  name: Create Categories
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{base_url}}/categories"
+  body:
+    type: json
+    data: |-
+      {
+      "name": "Web Development",
+      "slug": "web-dev",
+      "description": "All about web technologies"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

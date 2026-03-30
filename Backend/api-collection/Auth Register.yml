@@ -1,0 +1,24 @@
+info:
+  name: "Auth Register "
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Subhro",
+        "email": "admin@gmail.com",
+        "password": "password123",
+        "role": "Administrator"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

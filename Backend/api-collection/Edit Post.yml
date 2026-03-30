@@ -1,0 +1,25 @@
+info:
+  name: Edit Post
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{base_url}}/posts/69c0e96ed6143a374dcc1d6a"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "MyTitle",
+        "slug": "my-title",
+        "category": "Design",
+        "tags": ["nodejs", "react"],
+        "status": "Draft"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

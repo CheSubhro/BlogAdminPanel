@@ -1,0 +1,43 @@
+info:
+  name: Create Post
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{base_url}}/posts"
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: My Updated Post Title
+      - name: status
+        type: text
+        value: Published
+      - name: category
+        type: text
+        value: Development
+      - name: slug
+        type: text
+        value: my-updated-post-title
+      - name: tags
+        type: text
+        value: react,nodejs,mongodb
+      - name: image
+        type: file
+        value:
+          - C:\Users\CHE\Downloads\boarding-pass.jpg
+      - name: content
+        type: text
+        value: '{"blocks":[{"type":"header","data":{"text":"Hello","level":2}}]}'
+      - name: author
+        type: text
+        value: 65f123abc456def789012345
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

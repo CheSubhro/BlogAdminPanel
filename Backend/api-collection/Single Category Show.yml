@@ -1,0 +1,15 @@
+info:
+  name: Single Category Show
+  type: http
+  seq: 17
+
+http:
+  method: GET
+  url: "{{base_url}}/categories/69c1149fd90f0e0b0b231e50"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

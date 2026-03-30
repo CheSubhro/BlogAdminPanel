@@ -1,0 +1,29 @@
+info:
+  name: Create User
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: "{{base_url}}/users"
+  body:
+    type: json
+    data: |-
+      
+      {
+        "name": "Arjun Das",
+        "email": "arjun@example.com",
+        "role": "Editor"
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: base_url
+      value: http://localhost:5000/api
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

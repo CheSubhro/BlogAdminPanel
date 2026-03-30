@@ -1,0 +1,19 @@
+info:
+  name: Search Global
+  type: http
+  seq: 35
+
+http:
+  method: GET
+  url: http://localhost:5000/api/users/search/all?query=post
+  params:
+    - name: query
+      value: post
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

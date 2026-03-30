@@ -1,0 +1,18 @@
+info:
+  name: All Settings
+  type: http
+  seq: 30
+
+http:
+  method: GET
+  url: http://localhost:5000/api/settings
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzRjMzQzYjhjYjM5YTYzMWJmNDdkMiIsImlhdCI6MTc3NDg1MDI5OCwiZXhwIjoxNzc3NDQyMjk4fQ.cKzDvcpcdS2VPHsAw57Kct_VXkA57eWhrcBdAZ5pK4E
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
