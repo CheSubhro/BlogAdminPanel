@@ -1,10 +1,6 @@
 
 
-mitsubhra_db_user
 
-IFFgedkZeKKd0MJ8
-
-mongodb+srv://mitsubhra_db_user:IFFgedkZeKKd0MJ8@cluster0.2q2pqtp.mongodb.net/?appName=Cluster0
 
 API
 
